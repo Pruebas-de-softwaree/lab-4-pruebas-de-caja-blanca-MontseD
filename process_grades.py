@@ -17,7 +17,7 @@ def process_grades(students):
         total_grades += average
         counter += 1
 
-        if average > 70:  
+        if average >= 70:  
             passed.append(name)
         elif average >= 50:
             print(f"{name} is in recovery")
@@ -44,7 +44,7 @@ def process_grades(students):
     print("\nFinal processing result:")
     print(result) """
 
-if __name__ == "__main__":
+""" if __name__ == "__main__":
     students = [
         {'name': 'Ana', 'grades': [85, 90, 95]},
         {'name':'Pedro','grades':[55,60]},
@@ -54,5 +54,17 @@ if __name__ == "__main__":
         {'name':'Ana','grades':[80]}, {'name':'Jorge','grades':[]}
         ]
     result = process_grades(students)
+    print(result)""" 
+
+if __name__ == "__main__":
+    students = [
+        {'name': 'Ana', 'grades': [85, 90, 95]},  
+        {'name': 'Luis', 'grades': [70, 70, 70]},  
+        {'name': 'Jorge', 'grades': []},           
+        {'name': 'Marta', 'grades': [40, 45]},
+        {'name': 'Pedro', 'grades': [55,60]}  
+    ]
+    result = process_grades(students)
+    print("\nFinal processing result:")
     print(result)
  
