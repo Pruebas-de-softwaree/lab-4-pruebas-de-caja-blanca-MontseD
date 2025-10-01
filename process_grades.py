@@ -33,15 +33,26 @@ def process_grades(students):
         'overall_average': round(overall_average, 2)
     }
 
-
-if __name__ == "__main__":
+""" if __name__ == "__main__":
     students = [
         {'name': 'Ana', 'grades': [80, 90, 85]},  
         {'name': 'Luis', 'grades': [70, 70, 70]},  
         {'name': 'Jorge', 'grades': []},           
         {'name': 'Marta', 'grades': [40, 45, 50]}  
     ]
-
     result = process_grades(students)
     print("\nFinal processing result:")
+    print(result) """
+
+if __name__ == "__main__":
+    students = [
+        {'name': 'Ana', 'grades': [85, 90, 95]},
+        {'name':'Pedro','grades':[55,60]},
+        {'name':'Marta','grades':[40,45]},
+        {'name':'Jorge','grades':[]},
+        {'name':'Jorge','grades':[]}, {'name':'Lucia','grades':None},
+        {'name':'Ana','grades':[80]}, {'name':'Jorge','grades':[]}
+        ]
+    result = process_grades(students)
     print(result)
+ 
